@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+#mini-circle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+}
+
+.bind {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bindup {
+    transform: translateY(100%);
+}
+
+#main {
+    width: 100%;
+    background-color: black;
+}
+
+#lgpage {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+nav {
+    font-size: 1.6vw;
+    width: 100%;
+    padding: 27px 40px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+nav .ham {
+    cursor: pointer;
+}
+
+.sidebar {
+    position: absolute;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav span {
+    color: gray;
+}
+
+.cross{
+    right: 5vw;
+}
+
+.cross h5{
+    display: flex;
+    width: max-content;
+    gap: 1.5vw;
+    font-size: 1.4vw;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+
+#heading {
+    margin-top: 88px;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+#heading h1 {
+    color: gray;
+    font-family: General Sans;
+    line-height: 0.9;
+    font-size: 10vw;
+    font-weight: 600;
+}
+
+#front {
+    margin-left: 13px;
+}
+
+#devel {
+    margin-left: 162px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+}
+
+.block h5 {
+    text-align: right;
+    font-size: 1.1vw;
+    margin-top: 19px;
+}
+
+.lilheading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-transform: uppercase;
+    margin-top: 100px;
+    text-align: right;
+    font-size: 2vw;
+    margin-right: 40px;
+}
+
+.lilheading a {
+    padding: 5px 15px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 80px;
+    text-decoration: none;
+}
+
+.lgfooter {
+    position: absolute;
+    padding: 0 3vw;
+    bottom: 5%;
+    width: 100%;
+}
+
+.lgfooter div {
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+#sdpage {
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 10vw;
+    padding-left: 3vw;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.proj {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid grey;
+    padding: 3vw 1vw;
+}
+
+.proj h1 a {
+    font-size: 7vw;
+    color: gray;
+    text-decoration: none;
+}
+
+.p3 {
+    border-bottom: 1px solid grey;
+}
+
+.proj img {
+    opacity: 0;
+    pointer-events: none;
+    height: 150%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#tdpage {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 100vh;
+    padding: 10vw 10vw;
+    padding-left: 32vw;
+    background-color: black;
+    color: white;
+}
+
+#tdpage img {
+    width: 17vw;
+}
+
+.txtabout {
+    padding-top: 4vw;
+    padding-left: 3vw;
+    width: 31rem;
+}
+
+.txtabout h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: gray;
+    margin-bottom: 4px;
+}
+
+.txtabout p {
+    line-height: 1.7;
+    margin-bottom: 23px;
+    font-size: 1.1rem;
+}
+
+.txtabout a {
+    padding: 6px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.frleft {
+    display: flex;
+    font-size: 16px;
+    gap: 20px;
+}
+
+.frright {
+    display: flex;
+    gap: 50px;
+}
+
+.frright a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .block h5 {
+        font-size: 1.1vw;
+    }
+
+    .txtabout p {
+        line-height: 1.7;
+        font-size: 1.3rem;
+    }
+
+    .txtabout h5 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .txtabout p {
+        font-size: 2.1rem;
+        margin-bottom: 40px;
+    }
+
+    #tdpage {
+        gap: 100px;
+    }
+
+    .txtabout {
+        padding-top: 0vw;
+        width: 60rem;
+    }
+
+    .txtabout a {
+        padding: 10px 30px;
+        font-size: 30px;
+    }
+
+    .frleft {
+        font-size: 35px;
+        gap: 50px;
+    }
+
+    footer {
+        padding: 20px 80px;
+    }
+
+    .frright {
+        gap: 80px;
+    }
+
+    .frright a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #tdpage {
+        padding-left: 30vw;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #sdpage {
+        padding-top: 100px;
+    }
+
+    #tdpage {
+        padding-left: 20vw;
+        margin: 50px 0px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    
+    #devel {
+        margin-left: 62px;
+    }
+
+    .block h5 {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    nav {
+        font-size: 3vw;
+        padding: 27px 30px;
+    }
+
+    .lilheading {
+        font-size: 2.7vw;
+        padding-right: 25px;
+    }
+
+    .lgfooter div {
+        font-size: 2.5vw;
+        padding-left: 8px;
+    }
+
+    .txtabout p {
+        line-height: 1.5;
+        margin-bottom: 16px;
+        font-size: 0.8rem;
+    }
+
+    #tdpage {
+        gap: 30px;
+        padding-left: 10vw;
+    }
+
+    .txtabout a {
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 20px 20px;
+    }
+
+    .frleft {
+        font-size: 13px;
+    }
+
+    .frright {
+        gap: 30px;
+    }
+
+    .frright a {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    #sdpage {
+        padding-top: 80px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    #main {
+        overflow: hidden;
+    }
+
+    nav {
+        font-size: 3.5vw;
+        padding: 30px 26px;
+    }
+
+    #heading {
+        margin: 100px -5px;
+    }
+
+    .block h5 {
+        font-size: 2.8vw;
+        margin-top: 10px;
+    }
+
+    #front {
+        margin-left: 30px;
+    }
+
+    #devel {
+        margin-left: 144px;
+    }
+
+    .lilheading {
+        margin: 100px 0px;
+        font-size: 2.8vw;
+        padding-right: 10px;
+    }
+
+    .lgfooter {
+        padding: 0 5vw;
+        bottom: 30%;
+        margin: -41px 0px;
+    }
+
+    .lgfooter div {
+        font-size: 3vw;
+    }
+
+    #tdpage {
+        gap: 20px;
+        padding: 10vw 6vw;
+        padding-left: 20vw;
+    }
+
+    .txtabout {
+        padding: 0px;
+    }
+
+    .txtabout h5 {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+
+    .txtabout p {
+        line-height: 1.2;
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+    }
+
+    .txtabout a {
+        padding: 1px 6px;
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 15px 30px;
+    }
+
+    .frleft {
+        font-size: 12px;
+        gap: 15px;
+    }
+
+    .frright {
+        gap: 30px;
+    }
+
+    .frright a {
+        font-size: 11px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 320px) {
+    #main {
+        overflow: hidden;
+    }
+
+    nav {
+        padding: 27px 27px;
+        font-size: 3.5vw;
+    }
+
+    #heading {
+        margin: 100px 0px;
+        margin-left: 0px;
+    }
+
+    #front {
+        margin-left: 25px;
+    }
+
+    #devel {
+        padding-top: 10px;
+        margin-left: 115px;
+    }
+
+    .block h5 {
+        font-size: 2.8vw;
+        margin-top: 15px;
+    }
+
+    .lilheading {
+        margin-right: 10px;
+        font-size: 2.9vw;
+    }
+
+    .lgfooter div {
+        font-size: 4vw;
+    }
+
+    #tdpage img {
+        width: 25vw;
+    }
+
+    #tdpage {
+        gap: 15px;
+        padding-left: 13vw;
+    }
+
+    .txtabout p {
+        line-height: 1.3;
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+    }
+
+    .txtabout a {
+        padding: 2px 10px;
+        font-size: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 30px 15px;
+    }
+
+    .frleft {
+        font-size: 12px;
+        gap: 13px;
+    }
+
+    .frright {
+        padding-bottom: 10px;
+        gap: 16px;
+    }
+
+    .frright a {
+        font-size: 12px;
+        font-weight: 200;
+    }
+}
+
+@media (max-width: 768px) {
+    #mini-circle {
+        opacity: 0;
+    }
+}
